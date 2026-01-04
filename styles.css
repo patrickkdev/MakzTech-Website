@@ -40,8 +40,6 @@ a:hover {
   padding: 1.5rem;
 }
 
-/* Hero */
-
 .hero {
   border-bottom: 1px solid var(--border);
 }
@@ -73,8 +71,6 @@ a:hover {
   text-wrap: balance;
 }
 
-/* Sections */
-
 section {
   padding: 2rem 0;
 }
@@ -84,8 +80,6 @@ section h2 {
   font-size: 1.75rem;
   letter-spacing: -0.01em;
 }
-
-/* Grid / Cards */
 
 .grid {
   display: grid;
@@ -111,14 +105,10 @@ section h2 {
   color: var(--text-muted);
 }
 
-/* Text helpers */
-
 .muted {
   color: var(--text-muted);
   font-size: 0.95rem;
 }
-
-/* Principles */
 
 .principles {
   list-style: none;
@@ -139,7 +129,6 @@ section h2 {
   color: var(--accent);
 }
 
-
 code {
   background: var(--bg-soft);
   border: 1px solid var(--border);
@@ -149,16 +138,11 @@ code {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
-/* Footer */
-
-.footer {
-  padding-top: 2rem;
+footer {
   border-top: 1px solid var(--border);
   color: var(--text-muted);
   font-size: 0.9rem;
 }
-
-/* Small screens */
 
 @media (max-width: 640px) {
   body {
