@@ -25,6 +25,11 @@ body {
   font-size: 16px;
 }
 
+p {
+	padding: 0;
+	margin: 0;
+}
+
 a {
   color: var(--accent);
   text-decoration: none;
@@ -74,7 +79,7 @@ a:hover {
 main.container {
 	display: flex;
 	flex-direction: column;
-	gap: 3rem;
+	gap: 2rem;
 	padding: 3rem 1.5rem;
 }
 
