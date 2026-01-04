@@ -1,0 +1,183 @@
+:root {
+  --accent: #0ea5e9;        /* sky-500 */
+  --bg: #ffffff;
+  --bg-muted: #f8fafc;     /* slate-50 */
+  --border: #e5e7eb;       /* gray-200 */
+  --text: #0f172a;         /* slate-900 */
+  --text-muted: #475569;   /* slate-600 */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  background: linear-gradient(
+    to right,
+    rgba(14, 165, 233, 0.06),
+    white
+  );
+  color: var(--text);
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Hero */
+
+.hero {
+  border-bottom: 1px solid var(--border);
+}
+
+.hero .container {
+	text-align: center;
+  	display: flex;	
+  	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+
+.hero img.logo {
+  height: 6rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 3rem;
+  letter-spacing: -0.02em;
+}
+
+.hero .subtitle {
+  max-width: 640px;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin: 0;
+  text-wrap: balance;
+}
+
+/* Sections */
+
+section {
+  padding: 2rem 0;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  letter-spacing: -0.01em;
+}
+
+/* Grid / Cards */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.75rem;
+}
+
+.card {
+  background: var(--bg-muted);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.75rem;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.card p {
+  margin-bottom: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Text helpers */
+
+.muted {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Principles */
+
+.principles {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+}
+
+.principles li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.principles li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+
+code {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.9em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Small screens */
+
+@media (max-width: 640px) {
+  body {
+  	font-size: 14px;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero img.logo {
+  	height: 3rem;
+  }
+
+  .container {
+    padding: 1.25rem;
+  }
+
+  section h2 {
+  	font-size: 1.25rem;
+  }
+}

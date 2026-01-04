@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>MakzTech</title>
+  <meta
+    name="description"
+    content="MakzTech é o ecossistema de software, produtos e infraestrutura criado e mantido por Patrick Ferreira."
+  />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MakzTech" />
+  <meta
+    property="og:description"
+    content="Ecossistema de software, produtos e infraestrutura criado e mantido por Patrick Ferreira."
+  />
+  <meta property="og:image" content="makztech-og.jpg" />
+  <meta property="og:url" content="https://makztech.com" />
+  <meta property="og:site_name" content="MakzTech" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MakzTech" />
+  <meta
+    name="twitter:description"
+    content="Ecossistema de software, produtos e infraestrutura criado e mantido por Patrick Ferreira."
+  />
+  <meta name="twitter:image" content="makztech-og.jpg" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <img class="logo" src='makztech-st.png' alt='makztech logo'/>
+   	   <h1>MakzTech</h1>
+       <p class="subtitle">
+         Um ecossistema de software, produtos e infraestrutura criado e mantido por
+         <a href="https://patrick.makztech.com">Patrick Ferreira</a>
+       </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>O que é a MakzTech?</h2>
+      <p>
+        MakzTech é o espaço onde concentro tudo o que construo como desenvolvedor
+        de software: produtos independentes, experimentos, ferramentas e serviços
+        operacionais.
+      </p>
+    </section>
+
+	<section class="section">
+	  <h2>Como uso os subdomínios</h2>
+	  <p>
+	    Todos os serviços e produtos vivem sob <code>*.makztech.com</code>
+	    (por exemplo, <code>2gain.makztech.com</code>,
+	    <code>dokploy.makztech.com</code>). Esse modelo é inspirado na forma como
+	    empresas como o Google organizam seus produtos
+	    (<code>mail.google.com</code>, <code>drive.google.com</code>,
+	    <code>cloud.google.com</code>), mantendo uma identidade central clara.
+	  </p>
+	  <p>
+	    Essa abordagem elimina a necessidade de comprar, configurar e manter um
+	    domínio diferente para cada produto, reduzindo custo operacional e
+	    complexidade de gestão, ao mesmo tempo em que preserva a associação direta
+	    com a MakzTech.
+	  </p>
+	  <ul class="principles">
+	    <li>
+	      Identidade contínua: todos os produtos carregam o nome MakzTech no domínio;
+	    </li>
+	    <li>
+	      Escalabilidade: qualquer novo produto pode nascer imediatamente sob
+	      <code>*.makztech.com</code>, sem fricção;
+	    </li>
+	    <li>
+	      Organização clara: serviços, ambientes e ferramentas isolados por
+	      subdomínio;
+	    </li>
+	    <li>
+	      Operação de DNS centralizada e simplificada.
+	    </li>
+	  </ul>
+	</section>
+	
+	<section class="section">
+      <h2>Conheça</h2>
+      <ul>
+        <li>
+          <a href="https://patrick.makztech.com">patrick.makztech.com</a>
+        </li>
+        <li>
+          <a href="https://2gain.makztech.com">2gain.makztech.com</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        © <span id="year"></span> MakzTech · Patrick Ferreira
+      </p>
+      <script>
+      	year.textContent = new Date().getFullYear();
+      </script>
+    </div>
+  </footer>
+</body>
+</html>
